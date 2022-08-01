@@ -1,0 +1,81 @@
+.contantgraph {
+    border: 2px solid #C0C0C0;
+    border-radius: 10px;
+}
+
+.graphtop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graphdata {
+    margin: 20px 15px;
+    float: left;
+}
+
+.h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: black !important;
+}
+
+.heading {
+    line-height: 10px;
+}
+
+.heading>p {
+    color: #C0C0C0;
+}
+
+.desc {
+    float: left;
+}
+
+.desc>p {
+    color: #C0C0C0;
+}
+
+
+.h2 {
+    line-height: 0px;
+    font-size: 28px;
+    font-weight: 500;
+    color: black !important;
+}
+
+.graphbottom {
+    border-top: 2px solid #C0C0C0;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphbottom>div {
+    padding: 0px 40px;
+}
+
+.graphbottom>div>p {
+    line-height: 10px;
+    color: #C0C0C0;
+}
+
+
+@media (max-width: 1000px) {
+    .contantgraph {
+        width: 100%;
+    }
+    .graphdata {
+        margin: 0px 0px;
+    }
+    
+.graphbottom {
+    padding: 0px 0px;
+}
+
+.graphbottom>div {
+    padding: 0px 0px;
+}
+}

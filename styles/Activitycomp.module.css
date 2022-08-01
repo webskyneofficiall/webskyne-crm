@@ -1,0 +1,11 @@
+.activitycomp{
+    display: flex;
+    justify-content: space-between;
+
+}
+.activity_right{
+    display: flex;
+    float: left;
+    align-items: center;
+    
+}

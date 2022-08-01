@@ -1,0 +1,86 @@
+
+.table {
+    display:  grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+justify-content: space-between;
+    width: 100%;
+padding: 5px 10px;
+    
+}
+
+
+.table:hover {
+    background-color: #CCCCFF;
+border-radius: 10px;
+
+}
+.td_image{
+    border-radius:50%;
+
+}
+.image {
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+.p_heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.p_desc {
+    font-size: 15px;
+    color: blue;
+}
+
+.td_heading>p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 5px;
+}
+
+.td_cources>p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 5px;
+}
+
+.td_price {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.td_button>button {
+    padding: 10px 20px;
+    
+    border: 2px solid #C0C0C0;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.td_button>button:focus {
+    background-color: blue;
+}
+@media (max-width: 1000px) {
+
+    .table {
+    padding: 10px 0px;
+        
+    }
+    .td_cources>p {
+        font-size: 15px;
+        line-height: 10px;
+    }
+    
+.td_price {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.td_button>button {
+    padding: 10px 0px;
+    
+}
+
+}
