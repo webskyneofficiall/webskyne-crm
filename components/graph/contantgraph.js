@@ -1,5 +1,5 @@
 import styles from './Contantgraph.module.css'
-
+import Sellingapi from '../api/sellingapi'
 export const Contantgraph = () => {
     return (
         <>
@@ -19,28 +19,14 @@ export const Contantgraph = () => {
                     <div></div>
                 </div>
                 <div className={styles.graphbottom}>
+                    {Sellingapi.map((e, key) => (
+                        <ul key={key}>
+                            <li style={{ listStyle: "disc inside" ,color:"blue"}}>{e.name}</li>
+                            <li className={styles.h3}>{e.price}</li>
+                            <li className={styles.h4}>{e.desc}</li>
 
-
-                    <div>
-                        <p>Selling Product</p>
-                        <p className={styles.h2}>$4752.22</p>
-                        <p>12345 Sold in month</p>
-
-                    </div>
-
-                    <div style={{ borderRight: "2px solid black", borderLeft: "2px solid black" }}>
-                        <p>Selling Product</p>
-                        <p className={styles.h2}>$4752.22</p>
-                        <p>12345 Sold in month</p>
-
-                    </div>
-                    <div>
-                        <p>Selling Product</p>
-                        <p className={styles.h2}>$4752.22</p>
-                        <p>12345 Sold in month</p>
-
-                    </div>
-
+                        </ul>
+                    ))}
                 </div>
             </div>
 

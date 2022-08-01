@@ -30,7 +30,7 @@ a {
 
 .navbar_body {
   
-  color: white;
+  color: black;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
 }
@@ -39,46 +39,27 @@ ul.main-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px;
 }
-i{
-  padding: 0px 6px;
-  font-size: 15px;
-}
-
 
 li {
   list-style-type: none;
 }
 
-
-.navbar_body {
-  background: #033772;
-}
-
-.navbar_row {
-  background: #033772;
-
-}
-
 @media screen and (max-width: 768px) {
   .main-nav .menubar__button {
     display: block !important;
-    color: black;
-    padding: 40px 20px;
     cursor: pointer;
     position: relative;
     z-index: 10037;
-    padding-top: 12px;
+    padding-top: 12px ;
+    padding-left: 15px;
   }
 .menubar__button>div{
   float: right;
 }
   .main-nav ul.menuq2 {
     display: block !important;
-    left: 0;
     z-index: 10007;
-    right: 0;
     padding-bottom: 17px;
     padding-top: 10px;
   }

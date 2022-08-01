@@ -27,7 +27,7 @@ export const Checked = (props) => {
                                     <p >{e.desc}</p>
                                 </li>
                                 <li className={styles.td_price}>{e.price}</li>
-                                <li className={styles.td_button}><button ><div style={{ fontWeight: "600" }}>Process</div></button></li>
+                                <li className={styles.td_button}><span style={{ fontWeight: "600" ,color:"black"}}>Process</span></li>
                         </ul>
                     ))}
 

@@ -8,11 +8,11 @@ export const Layout = ({ children }) => {
             <Navbar_heading
                 image={
                     <div className={styles.image}>
-                    <button className={styles.icon_button}>
-                        <i className="fa-solid fa-magnifying-glass"></i>
+                        <button className={styles.icon_button}>
+                            <i className="fa-solid fa-magnifying-glass"></i>
 
-                        <span className={styles.icon_button__badge}>2</span>
-                    </button>
+                            <span className={styles.icon_button__badge}>2</span>
+                        </button>
                     </div>
                 }
                 name="hi, Johntosan"
@@ -25,19 +25,21 @@ export const Layout = ({ children }) => {
                 }
             />
             <Contantgraph />
-            <div>
+            <div className={styles.layoutlink}>
                 <ul className={styles.ul}>
                     <li>Checked</li>
                     <li>Already</li>
                     <li>home</li>
                     <li>home</li>
-                    <li><button className={styles.layout_button}>Last month  <i className="fa-solid fa-angle-down"></i></button></li>
+
+                    <li>home</li>
                 </ul>
+                <button className={styles.layout_button}>Last month  <i className="fa-solid fa-angle-down"></i></button>
 
             </div>
             <div>
             </div>
-            {children}
+
 
 
         </>

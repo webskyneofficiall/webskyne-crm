@@ -1,11 +1,16 @@
 .ul {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #C0C0C0;
 
 }
-
+.layoutlink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .ul>li {
     font-size: 24px;
     padding: 10px 0px;
@@ -37,17 +42,17 @@
     border: none;
     outline: none;
     border-radius: 50%;
-  }
-  
-  .icon_button:hover {
+}
+
+.icon_button:hover {
     cursor: pointer;
-  }
-  
-  .icon_button:active {
+}
+
+.icon_button:active {
     background: #cccccc;
-  }
-  
-  .icon_button__badge {
+}
+
+.icon_button__badge {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -59,8 +64,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-  }
-  
+}
+
 .image {
     display: flex;
     justify-content: center;
@@ -70,15 +75,16 @@
     border-radius: 50%;
     border: 2px solid #787575;
 }
+
 /* End */
 
 
 @media (max-width: 1000px) {
     .ul>li {
-font-size: 15px;
+        font-size: 15px;
     }
 
-    
+
     .layout_button {
         padding: 0px 0px;
     }
