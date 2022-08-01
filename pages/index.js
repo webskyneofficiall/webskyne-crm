@@ -9,6 +9,7 @@ export default function Index() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
       </Head>
 
+      
       <Home />
     </>
   )

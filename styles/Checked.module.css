@@ -62,6 +62,30 @@ border-radius: 10px;
 .td_button>button:focus {
     background-color: blue;
 }
+
+.icon_button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+  }
+  
+  .icon_button:hover {
+    cursor: pointer;
+  }
+  
+  .icon_button:active {
+    background: #cccccc;
+  }
+  
+
 @media (max-width: 1000px) {
 
     .table {

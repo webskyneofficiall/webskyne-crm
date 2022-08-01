@@ -6,12 +6,20 @@ export const Layout = ({ children }) => {
     return (
         <>
             <Navbar_heading
-                image=""
+                image={
+                    <div className={styles.image}>
+                    <button className={styles.icon_button}>
+                        <i className="fa-solid fa-magnifying-glass"></i>
+
+                        <span className={styles.icon_button__badge}>2</span>
+                    </button>
+                    </div>
+                }
                 name="hi, Johntosan"
                 discription="Cheers, and happy activites - Novamber 18, 2021"
-                right_icon={<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" ,fontSize:"27px" , marginRight:"20px"}}>
-                
-                        <i className="fa-solid fa-magnifying-glass"></i>
+                right_icon={<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontSize: "27px", marginRight: "20px" }}>
+
+                    <i className="fa-solid fa-magnifying-glass"></i>
 
                 </div>
                 }

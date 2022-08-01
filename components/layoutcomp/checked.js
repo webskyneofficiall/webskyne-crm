@@ -11,7 +11,10 @@ export const Checked = (props) => {
 
                         <ul className={styles.table} key={key}>
                                 <li className={styles.td_image}>
-                                    <img className={styles.image} src={e.image} />
+                                <button className={styles.icon_button}>
+                        <i className="fa-solid fa-magnifying-glass"></i>
+
+                    </button>
 
                                 </li>
                                 <li className={styles.td_heading}>

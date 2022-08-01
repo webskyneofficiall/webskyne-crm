@@ -3,7 +3,13 @@
     border-right: 2px solid #C0C0C0;
     padding: 10px 20px;
 }
-
+.navbar_icon{
+    width: 50px ;
+    height: 50px ;
+    background-color: rgb(105, 105, 247);
+    
+    border-radius: 10px;
+}
 .ul {
     display: flex;
     flex-direction: column;

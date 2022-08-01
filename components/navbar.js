@@ -24,7 +24,9 @@ export const Navbar = () => {
             <div className={styles.navbar}>
 
                 <Navbar_heading
-                    image=""
+                    image={<div className={styles.navbar_icon}>
+
+                        </div>}
                     name="Pony Weist"
                     discription="Super dashboard"
                     right_icon={<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>

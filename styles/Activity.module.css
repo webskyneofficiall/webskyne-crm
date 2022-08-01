@@ -6,3 +6,37 @@
     margin: 20px 0px;
     font-size: 24px;
 }
+
+.icon_button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+  }
+  
+  .icon_button:hover {
+    cursor: pointer;
+  }
+  
+  .icon_button:active {
+    background: #cccccc;
+  }
+  
+
+  
+.image {
+    width: 55px;
+    overflow: hidden;
+    height: 55px;
+    /* line-height: 72px; */
+    border-radius: 50%;
+    border: 2px solid black;
+}
+/* End */
