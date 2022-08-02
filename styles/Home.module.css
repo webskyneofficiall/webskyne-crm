@@ -12,26 +12,33 @@
 }
 } */
 
-.home{
+.home {
+  width: 100%;
+  height: 100%;
   display: flex;
+  position: fixed;
 }
-.home_main{
+
+.home_main {
   width: 100%;
   display: grid;
   grid-template-columns: 60% 40%;
+  overflow-y: scroll;
 }
 
 @media (max-width: 1000px) {
-  .desktopnavbar{
+  .desktopnavbar {
     display: none;
   }
-  .home{
-    display: grid;
-    grid-template-columns:  100%;
+
+  .home {
+    flex-direction: column;
   }
-  .home_main{
-    display: grid;
+
+  .home_main {
     grid-template-columns: 100%;
+    overflow-y: scroll;
+
   }
-  
+
 }

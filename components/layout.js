@@ -3,6 +3,7 @@ import styles from '../styles/Layout.module.css'
 import { Navbar_heading } from "./navbar_heading";
 import { Contantgraph } from "./graph/contantgraph";
 import { useState } from "react";
+import { Checked } from "./layoutcomp/checked";
 export const Layout = ({ children }) => {
     const [search, setSearch] = useState(true)
     return (
@@ -41,7 +42,9 @@ export const Layout = ({ children }) => {
                 <Contantgraph />
                 <div className={styles.layoutlink}>
                     <ul className={styles.layout_ul}>
+                        <Link  href="../layoutcomp/content">
                         <li>Checked</li>
+        </Link>
                         <li>Already</li>
                         <li>home</li>
                         <li>home</li>
@@ -54,6 +57,8 @@ export const Layout = ({ children }) => {
                 </div>
 
             </div>
+<Checked/>
+            {children}
 
 
         </>

@@ -1,10 +1,8 @@
 import styles from '../../styles/Checked.module.css'
 import Contantapi from '../api/contantapi'
-import { Layout } from '../layout'
 export const Checked = (props) => {
     return (
         <>
-            <Layout />
 
             <div className={styles.checked}>
                 {Contantapi.map((e, key) => (
