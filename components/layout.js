@@ -5,6 +5,8 @@ import { Contantgraph } from "./graph/contantgraph";
 export const Layout = ({ children }) => {
     return (
         <>
+        <div className={styles.layout}>
+
             <Navbar_heading
                 image={
                     <div className={styles.image}>
@@ -26,12 +28,11 @@ export const Layout = ({ children }) => {
             />
             <Contantgraph />
             <div className={styles.layoutlink}>
-                <ul className={styles.ul}>
+                <ul className={styles.layout_ul}>
                     <li>Checked</li>
                     <li>Already</li>
                     <li>home</li>
                     <li>home</li>
-
                     <li>home</li>
                 </ul>
                 <button className={styles.layout_button}>Last month  <i className="fa-solid fa-angle-down"></i></button>
@@ -40,6 +41,7 @@ export const Layout = ({ children }) => {
             <div>
             </div>
 
+            </div>
 
 
         </>

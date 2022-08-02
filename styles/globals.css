@@ -45,7 +45,7 @@ li {
   list-style-type: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .main-nav .menubar__button {
     display: block !important;
     cursor: pointer;

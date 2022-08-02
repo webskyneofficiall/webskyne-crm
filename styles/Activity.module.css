@@ -1,10 +1,10 @@
 .activity{
-    margin: 10px 15px;
+    margin: 10px 0px;
 }
 .h1{
     font-weight: 500;
     margin: 20px 0px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .icon_button {
@@ -26,17 +26,7 @@
   }
   
   .icon_button:active {
-    background: #cccccc;
+    background: #855d5d;
   }
   
 
-  
-.image {
-    width: 55px;
-    overflow: hidden;
-    height: 55px;
-    /* line-height: 72px; */
-    border-radius: 50%;
-    border: 2px solid black;
-}
-/* End */

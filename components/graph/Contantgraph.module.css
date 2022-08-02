@@ -1,6 +1,7 @@
 .contantgraph {
     border: 2px solid #C0C0C0;
     border-radius: 10px;
+    margin: 10px 0px;
 }
 
 .graphtop {
@@ -62,7 +63,6 @@
 }
 
 .graphbottom>ul>li {
-    /* line-height: px; */
     color: #C0C0C0;
 }
 
@@ -71,24 +71,30 @@
     .contantgraph {
         width: 100%;
     }
+
     .graphdata {
-        margin: 0px 0px;
+        margin: 0px 5px;
     }
-    
-.graphbottom ul{
-    padding: 0px 0px;
-}
 
-.graphbottom>ul>li {
-font-size: 14px;
-}
-.h3 {
-    line-height: 30px;
-    font-size: 24px;
-    margin-left: 20px;
-}
-.h4{
-    margin-left: 20px;
+    .graphbottom ul {
+        padding: 0px 0px;
+    }
 
-}
+    .graphbottom>ul>li {
+        font-size: 12px;
+    }
+    .heading {
+        line-height: 20px;
+    }
+    .h3 {
+        line-height: 30px;
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .h4 {
+        margin-left: 20px;
+
+    }
+
 }
