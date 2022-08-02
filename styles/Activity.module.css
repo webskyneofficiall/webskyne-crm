@@ -28,5 +28,8 @@
   .icon_button:active {
     background: #855d5d;
   }
-  
-
+@media (max-width: 1000px) {
+  .activity{
+    margin: 10px 10px;
+}
+}

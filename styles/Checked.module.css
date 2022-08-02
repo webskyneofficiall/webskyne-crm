@@ -95,14 +95,18 @@
 @media (max-width: 1000px) {
 
     .table {
-        padding: 10px 0px;
+        padding: 10px 5px;
+        /* margin: 0px 5px; */
 
     }
+
 
     .td_cources>p {
-        font-size: 15px;
-        line-height: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 5px;
     }
+
 
     .td_price {
         font-weight: 600;
@@ -113,9 +117,19 @@
         padding: 10px 0px;
 
     }
+
     .td_button {
-        list-style:none;
-font-size: 10px;
+        list-style: none;
+        font-size: 10px;
     }
 
+    .td_heading>p {
+        font-size: 12px;
+
+    }
+    .icon_button {
+        width: 40px;
+        height: 40px;
+    }
+    
 }

@@ -56,12 +56,13 @@ li {
   }
 .menubar__button>div{
   float: right;
+  padding: 5px 20px;
 }
   .main-nav ul.menuq2 {
     display: block !important;
     z-index: 10007;
     padding-bottom: 17px;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   .main-nav ul.main-menu {

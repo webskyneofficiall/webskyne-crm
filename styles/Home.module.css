@@ -1,4 +1,4 @@
-.home{
+/* .home{
   display: grid;
   grid-template-columns: 25% 50% 25%;
 }
@@ -10,4 +10,28 @@
 .navbar{
 
 }
+} */
+
+.home{
+  display: flex;
+}
+.home_main{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+@media (max-width: 1000px) {
+  .desktopnavbar{
+    display: none;
+  }
+  .home{
+    display: grid;
+    grid-template-columns:  100%;
+  }
+  .home_main{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  
 }

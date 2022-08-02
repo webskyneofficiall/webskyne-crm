@@ -1,7 +1,7 @@
 .contantgraph {
     border: 2px solid #C0C0C0;
     border-radius: 10px;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .graphtop {
@@ -84,7 +84,7 @@
         font-size: 12px;
     }
     .heading {
-        line-height: 20px;
+        line-height: 25px;
     }
     .h3 {
         line-height: 30px;

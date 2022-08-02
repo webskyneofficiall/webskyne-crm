@@ -21,12 +21,12 @@ export const Navbar = () => {
     }
     return (
         <>
-            <div className={styles.navbar}>
+            {/* <div className={styles.navbar}>
 
                 <Navbar_heading
                     image={<div className={styles.navbar_icon}>
 
-                        </div>}
+                    </div>}
                     name="Pony Weist"
                     discription="Super dashboard"
                     right_icon={<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
@@ -56,64 +56,64 @@ export const Navbar = () => {
 
 
 
-            </div>
+            </div> */}
 
 
 
 
             <div className={styles.navbar_mobile}>
 
-            <div className="navbar_body">
-                <div className="navbar_container">
-                    <div className="navbar_row">
+                <div className="navbar_body">
+                    <div className="navbar_container">
+                        <div className="navbar_row">
 
-                        < div >
-                            <div className="main-nav " >
+                            < div >
+                                <div className="main-nav " >
 
-                                {/* Responsive Menu Button */}
-                                {isResponsiveclose === true ? <>
-                                    <div className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ><div><i className="fa-solid fa-bars"></i> MENU</div></div>
-                                </> : <>
-                                    <div className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ><div><i className="fa-solid fa-bars"></i> MENU</div></div>
-                                </>}
-                                <ul className={boxClass.join(' ')}>
+                                    {/* Responsive Menu Button */}
+                                    {isResponsiveclose === true ? <>
+                                        <div className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ><div><i className="fa-solid fa-bars"></i> MENU</div></div>
+                                    </> : <>
+                                        <div className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ><div><i className="fa-solid fa-bars"></i> MENU</div></div>
+                                    </>}
+                                    <ul className={boxClass.join(' ')}>
 
-                                    {Navbarapi.map(item => {
-                                    
+                                        {Navbarapi.map(item => {
 
-                                        return item?.subList !== undefined ? <>
 
-                                            <li key={item.link} className={styles.innerLi}>
-                                                {item.item}
-                                                <i className="fa-solid fa-angle-down"></i>
+                                            return item?.subList !== undefined ? <>
 
-                                                {item.subList.map(e => <div key={e.url} >
-                                                    <Link passHref href={e.url}>
-                                                        <a>{e.name}</a>
-                                                    </Link>
-                                                </div>)}
-                                            </li>
+                                                <li key={item.link} className={styles.innerLi}>
+                                                    {item.item}
+                                                    <i className="fa-solid fa-angle-down"></i>
 
-                                        </>
-                                            :
-                                            <ul className={styles.ul}>
-                                                <li>
-                                                    <p><i className={item.icon} style={{ padding: "0px 10px" }}></i>{item.item}</p>
-                                                    <div>{item.noti}</div>
+                                                    {item.subList.map(e => <div key={e.url} >
+                                                        <Link passHref href={e.url}>
+                                                            <a>{e.name}</a>
+                                                        </Link>
+                                                    </div>)}
                                                 </li>
-                                            </ul>
 
-                                    }
-                                    )}
-                                </ul>
+                                            </>
+                                                :
+                                                <ul className={styles.ul}>
+                                                    <li>
+                                                        <p><i className={item.icon} style={{ padding: "0px 10px" }}></i>{item.item}</p>
+                                                        <div>{item.noti}</div>
+                                                    </li>
+                                                </ul>
 
-                            </div>
-                        </div >
+                                        }
+                                        )}
+                                    </ul>
 
+                                </div>
+                            </div >
+
+                        </div>
                     </div>
                 </div>
             </div>
-</div>
         </>
     )
 }
