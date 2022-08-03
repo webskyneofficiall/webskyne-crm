@@ -1,5 +1,5 @@
 .layout_ul {
-    width: 80%;
+    width: 78%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,21 +8,24 @@
 }
 
 .layout {
-    margin: 10px 20px;
+    margin: 10px 30px;
 }
-.input{
+
+.input {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.input{
-    padding: 17px 15px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+.input {
+    padding: 14px 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
-.input_div>input{
+
+.input_div>input {
     width: 400px;
     height: 40px;
     border-radius: 5px;
@@ -35,7 +38,8 @@
 }
 
 .layout_ul>li {
-    margin-left: -33px;
+    /* margin-left: -33px; */
+    /* border: 3px solid black; */
     font-size: 24px;
     padding: 10px 0px;
     list-style: none;
@@ -43,7 +47,6 @@
 
 .layout_ul>li:hover {
     border-bottom: 2px solid blue;
-    list-style: none;
 }
 
 .layout_button {
@@ -106,13 +109,15 @@
 @media (max-width: 1000px) {
 
     .layout_ul {
-        width: 75%    
+        width: 75%
     }
+
     .layout_ul>li {
-        margin-left: -37px;
+        /* margin-left: -37px; */
         font-size: 15px;
-        padding:0px 10px;
+        /* padding: 0px 10px; */
     }
+
     .layout_button {
         padding: 8px 0px;
     }
@@ -120,10 +125,12 @@
     .layout {
         margin: 10px 10px;
     }
-    .input{
-        padding: 25px 8px;
+
+    .input {
+        padding: 15px 17px;
     }
-    .input_div>input{
+
+    .input_div>input {
         width: 250px;
         height: 40px;
         border-radius: 5px;

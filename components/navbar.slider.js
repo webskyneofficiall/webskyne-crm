@@ -12,7 +12,8 @@ import { Navbar_heading } from "./navbar_heading";
 import "react-pro-sidebar/dist/css/styles.css";
 import styles from "./Navbarslider.module.css"
 import Navbarapi from "./api/navbapi";
-
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navbarslider = () => {
 
   //create initial menuCollapse state using useState hook
@@ -53,9 +54,9 @@ const Navbarslider = () => {
               )}
             </div>
             <div className={styles.closemenu} onClick={menuIconClick}>
-              {menuCollapse ? (
-                <i className="fa-solid fa-chart-line"></i>) : (
-                <i className="fa-solid fa-gauge"></i>)}
+              {menuCollapse ? <div> <FontAwesomeIcon icon={faCoffee} /> </div>
+                : 
+                  <div> <FontAwesomeIcon icon={faCoffee} /> </div>}
             </div>
           </SidebarHeader>
           <SidebarContent>

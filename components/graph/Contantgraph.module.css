@@ -1,7 +1,7 @@
 .contantgraph {
     border: 2px solid #C0C0C0;
     border-radius: 10px;
-    margin: 5px 0px;
+    margin: 25px 0px;
     
 }
 
@@ -23,15 +23,12 @@
     color: black !important;
 }
 
-.heading {
-    line-height: 10px;
-}
-
 .heading>p {
     color: #C0C0C0;
 }
 
 .desc {
+    margin-top: 45px;
     float: left;
 }
 
@@ -41,7 +38,7 @@
 
 
 .h2 {
-    line-height: 0px;
+    /* line-height: 0px; */
     font-size: 28px;
     font-weight: 500;
     color: black !important;
@@ -72,8 +69,11 @@
     .contantgraph {
         width: 100%;
     }
-
+.desc{
+    margin-top: 23px;
+}
     .graphdata {
+        padding: 25px 4px;
         margin: 0px 5px;
     }
 

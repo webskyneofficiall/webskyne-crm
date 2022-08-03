@@ -12,6 +12,8 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -44,25 +46,24 @@ ul.main-menu {
 li {
   list-style-type: none;
 }
-
 @media screen and (max-width: 1000px) {
   .main-nav .menubar__button {
     display: block !important;
     cursor: pointer;
     position: relative;
     z-index: 10037;
-    padding-top: 12px ;
+    padding-top: 28px ;
     padding-left: 15px;
   }
 .menubar__button>div{
   float: right;
-  padding: 5px 20px;
+  padding: 0px 25px;
 }
   .main-nav ul.menuq2 {
     display: block !important;
     z-index: 10007;
     padding-bottom: 17px;
-    padding-top: 20px;
+    padding-top: 35px;
   }
 
   .main-nav ul.main-menu {

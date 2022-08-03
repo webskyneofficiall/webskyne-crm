@@ -21,7 +21,7 @@ export const Layout = ({ children }) => {
                     }
                     name="hi, Johntosan"
                     discription="Cheers, and happy activites - Novamber 18, 2021"
-                    right_icon={<div onClick={() => setSearch((search) ? false : true)} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontSize: "27px", marginRight: "20px" }}>
+                    right_icon={<div onClick={() => setSearch((search) ? false : true)} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontSize: "27px", marginRight: "20px"}}>
 
                         <i className="fa-solid fa-magnifying-glass"></i>
 
@@ -32,7 +32,7 @@ export const Layout = ({ children }) => {
                         <input type="text" placeholder="search ......" />
 
                     </div>
-                    <div onClick={() => setSearch((search) ? false : true)} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontSize: "27px", marginRight: "20px" }}>
+                    <div onClick={() => setSearch((search) ? false : true)} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontSize: "27px", }}>
 
                         <i className="fa-solid fa-magnifying-glass"></i>
 
@@ -42,9 +42,9 @@ export const Layout = ({ children }) => {
                 <Contantgraph />
                 <div className={styles.layoutlink}>
                     <ul className={styles.layout_ul}>
-                        <Link  href="../layoutcomp/content">
-                        <li>Checked</li>
-        </Link>
+                        <Link href="../layoutcomp/content">
+                            <li>Checked</li>
+                        </Link>
                         <li>Already</li>
                         <li>home</li>
                         <li>home</li>
@@ -55,9 +55,9 @@ export const Layout = ({ children }) => {
                 </div>
                 <div>
                 </div>
+                <Checked />
 
             </div>
-<Checked/>
             {children}
 
 

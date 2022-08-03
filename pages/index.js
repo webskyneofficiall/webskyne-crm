@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Home from './home'
+import SignUp from './signin'
 export default function Index() {
   return (
     <>
@@ -9,8 +10,7 @@ export default function Index() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
       </Head>
 
-      
-      <Home />
+      <SignUp/>
     </>
   )
 }

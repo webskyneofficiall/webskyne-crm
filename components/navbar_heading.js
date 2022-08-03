@@ -8,7 +8,7 @@ export const Navbar_heading = ({ image, name, discription, right_icon }) => {
                     <div>
                         {image}
                     </div>
-                    <span>
+                    <span style={{  margin:"0px 15px" }}>
                         <ul className={styles.ul}>
                             <li><h1 className={styles.h1_name}>{name}</h1> </li>
                             <li className={styles.desc} style={{ color: "#C0C0C0" }}>{discription}</li>

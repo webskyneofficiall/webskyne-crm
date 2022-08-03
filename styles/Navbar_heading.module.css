@@ -6,7 +6,7 @@
 
 .ul>li {
     list-style: none;
-    line-height: 15px;
+    line-height: 20px;
 }
 
 .right_container {
@@ -26,6 +26,7 @@
 }
 
 .desc {
+    margin: 4px 0px;
     color: chocolate;
 }
 
