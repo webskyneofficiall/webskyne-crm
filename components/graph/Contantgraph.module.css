@@ -2,7 +2,7 @@
     border: 2px solid #C0C0C0;
     border-radius: 10px;
     margin: 25px 0px;
-    
+
 }
 
 .graphtop {
@@ -39,6 +39,7 @@
 
 .h2 {
     /* line-height: 0px; */
+    margin: 10px 0px;
     font-size: 28px;
     font-weight: 500;
     color: black !important;
@@ -69,9 +70,11 @@
     .contantgraph {
         width: 100%;
     }
-.desc{
-    margin-top: 23px;
-}
+
+    .desc {
+        margin-top: 23px;
+    }
+
     .graphdata {
         padding: 25px 4px;
         margin: 0px 5px;
@@ -84,9 +87,11 @@
     .graphbottom>ul>li {
         font-size: 12px;
     }
+
     .heading {
         line-height: 25px;
     }
+
     .h3 {
         line-height: 30px;
         font-size: 24px;

@@ -2,8 +2,8 @@
 import classes from './Signup.module.css'
 
 import React, { useState } from 'react';
-import  Loginrighttemp  from './loginrighttamp';
-import  Signuprighttemp  from './signuprighttemp';
+import Loginrighttemp from './loginrighttamp';
+import Signuprighttemp from './signuprighttemp';
 import Link from 'next/link';
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' };
 
@@ -37,7 +37,7 @@ const Signup = () => {
                             <h1>welcome back</h1>
                             <h1 style={{ display: "flex" }}>To <p style={{ marginLeft: "10px", color: "blue" }}>UserWise</p></h1>
 
-                        </div> : <div><h1>Create your Account</h1> </div>}</div>
+                        </div> : <div><h1>Create your </h1> <h1>Account</h1></div>}</div>
 
                         <div className={classes.heading_desc}>{isSignup ? null : 'Sign in  To your account below'}</div>
                         <form className={classes.form} onSubmit={handleSubmit}>
@@ -75,16 +75,19 @@ const Signup = () => {
                             <div className={classes.privicy}>{isSignup ? 'by Clicking "register" you Agree yo UserWise Terms and Privicy .' : null}</div>
                             <Link href="/home">
 
-                                <button type="submit" className={classes.submit}>
-                                    {isSignup ? 'Sign Up' : 'Sign In'}
+                                <button type="submit" className={`${classes.submit} ${classes.subbmithover}`}>
+                                    {isSignup ? 'Register' : 'Sign In'}
                                 </button>
                             </Link>
 
 
                             <div className={classes.switchbutton}>
-                                <div onClick={switchMode} style={{color:"blue",borderBottom:"2px solid blue"}}>
-                                    {isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign Up"}
-                                </div>
+                                <span>
+                                    {isSignup ? 'Already have an account ?  ' : "Don 't have an account ?  "}
+                                </span>
+                                <span onClick={switchMode} style={{ color: "blue", borderBottom: "2px solid blue" }}>
+                                    {isSignup ? 'Sign in' : " Sign Up"}
+                                </span>
                             </div>
 
                         </form>
@@ -94,7 +97,7 @@ const Signup = () => {
 
                 </div>
                 <div className={classes.rightpaper}>
-                    {(isSignup) ? <div className={classes.rightpapersignin}><Signuprighttemp />  </div> : <Loginrighttemp />}
+                    {(isSignup) ? <Signuprighttemp /> : <div className={classes.rightpapersignin}><Loginrighttemp />  </div>}
 
 
                 </div>

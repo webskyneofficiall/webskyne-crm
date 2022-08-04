@@ -9,24 +9,21 @@ const Loginrighttemp = () => {
 
                     <button className={classes.loginrighttemp_icon}>new Features</button>
                     <div className={classes.loginrighttemp_body}>
-                        <p>Campinh gashboard with  <span style={{ color: "blue" }}>Gantt  View</span> </p>
+                        <p>Campagign Dashboard with  <span style={{ color: "blue" }}>Gantt  View</span> </p>
 
                     </div>
-                    <div className={classes.c}>
-                        <div>
+                    <div className={classes.loginrighttemp_desc}>
+
                             <p>see each individual is schedules in gantt format</p>
                             <p>for easer planning and evaluation</p>
+                        <div style={{ margin:"20px 0px" , display:"flex"}}>
+                        <p style={{borderBottom:"2px solid white" ,padding:"10px 0px"}}> Learn More</p>
+
                         </div>
-                        <div> Learn More</div>
                     </div>
                 </div>
 
-                <div className={classes.boderlogin}>
-
-                </div>
-                <div className={classes.bodersmallicon}>
-
-                </div>
+              
             </div>
         </>
     )

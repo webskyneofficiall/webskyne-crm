@@ -1,5 +1,5 @@
 .signinup {
-    background: blue;
+
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -9,12 +9,11 @@
 .limiter {
     background: white;
     border-radius: 10px;
-    /* border: 5px solid red; */
-    width: 70%;
+    width: 75%;
     height: 70vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -25,10 +24,9 @@
 
 .submit {
     margin: 23px 0px;
-    background-color: blue;
     border: none;
-    padding: 13px 26px;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 .form {
@@ -55,24 +53,33 @@
 }
 
 .privicy {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 500;
 }
 
 
 
 /* rightpage css  */
+
 .signuprighttemp {
     width: 100%;
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
 }
 
 .signuprighttemp_in {
+    position: relative;
     padding: 30px 20px;
-    background-color: rgb(196, 235, 235);
     z-index: 1;
+}
+
+.signuprighttemp_in_data {
+    background-color: rgb(196, 235, 235);
+    position: relative;
+    padding: 30px 20px;
+    z-index: 1;
+    z-index: 3;
 }
 
 .signuprighttemp_icon {
@@ -104,13 +111,13 @@
 }
 
 .bodersignup {
-    top: 30px;
-    right: 80px;
+    top: 15%;
+    right: -12px;
     position: absolute;
     background-color: blue;
     width: 310px;
     height: 350px;
-    /* z-index: -1; */
+    z-index: -1;
 }
 
 
@@ -121,44 +128,103 @@
     background-color: blue;
     border-radius: 10px;
     height: 100%;
-    width: 90%;
+    color: white;
     padding: 30px 0px;
     position: relative;
 }
 
 .loginrighttemp_in {
-    padding: 22px 30px;
+    padding: 0px 30px;
 }
 
 .loginrighttemp_icon {
     background-color: aliceblue;
-    color: blue;
-    padding: 5px 15px;
+    color: rgb(58, 58, 200);
+    padding: 7px 17px;
     border: none;
     border-radius: 15px;
+    font-weight: 500;
+    font-size: 15px;
 }
 
+
 .loginrighttemp_body {
-    margin: 10px 0px;
+    margin: 20px 0px;
     font-size: 27px;
     font-weight: 500;
 }
 
-.loginrighttemp_body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loginrighttemp_desc {
+    /* margin: 10px; */
+    font-size: 15px;
 }
 
-/* .boderlogin{
-    padding: 0px 20px;
+.subbmithover {
+    width: 140px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(21, 21, 216);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.subbmithover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+
+.subbmithover:active:after {
+    background: transparent;
+}
+
+.subbmithover:hover:before {
+    opacity: 1;
+    background: #111;
+
+}
+
+.subbmithover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
     width: 100%;
-    height:21vh;
-    margin-top: 50px;
-    margin-left: 50px;
-    background-color: black;
-    
-} */
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
 
 @media (max-width: 1000px) {
     .right_icon {
@@ -167,7 +233,6 @@
 
     .limiter {
         grid-template-columns: 100%;
-        /* justify-content: space-around; */
         width: 100%;
     }
 
