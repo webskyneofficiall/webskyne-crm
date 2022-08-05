@@ -28,7 +28,6 @@ const Signup = () => {
     return (
         <div className={classes.signinup}>
 
-            <div className={classes.limiter}>
 
                 <div className={classes.leftpaper} >
                     <div>
@@ -37,7 +36,7 @@ const Signup = () => {
                             <h1>welcome back</h1>
                             <h1 style={{ display: "flex" }}>To <p style={{ marginLeft: "10px", color: "blue" }}>UserWise</p></h1>
 
-                        </div> : <div><h1>Create your </h1> <h1>Account</h1></div>}</div>
+                        </div> : <div style={{ fontSize:"25px" }}><h1>Create your </h1> <h1>Account</h1></div>}</div>
 
                         <div className={classes.heading_desc}>{isSignup ? null : 'Sign in  To your account below'}</div>
                         <form className={classes.form} onSubmit={handleSubmit}>
@@ -97,12 +96,11 @@ const Signup = () => {
 
                 </div>
                 <div className={classes.rightpaper}>
-                    {(isSignup) ? <Signuprighttemp /> : <div className={classes.rightpapersignin}><Loginrighttemp />  </div>}
+                    {(isSignup) ? <Signuprighttemp /> : <Loginrighttemp />  }
 
 
                 </div>
 
-            </div>
 
         </div>
     );
