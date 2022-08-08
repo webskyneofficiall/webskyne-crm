@@ -55,7 +55,7 @@
     display: none !important;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
     .navbar {
         display: none;
     }

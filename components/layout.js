@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
     const [search, setSearch] = useState(true)
     return (
         <>
-            <div className={styles.layout}>
+            <div className={`${styles.layout} `}>
                 {(search) ? <Navbar_heading
                     image={
                         <div className={styles.image}>
@@ -45,7 +45,7 @@ export const Layout = ({ children }) => {
                         <Link href="../layoutcomp/content">
                             <li>Checked</li>
                         </Link>
-                        <li>Already</li>
+                        <li >Already</li>
                         <li>home</li>
                         <li>home</li>
                         <li>home</li>
