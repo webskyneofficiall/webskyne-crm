@@ -1,5 +1,5 @@
-import styles from './Contantgraph.module.css'
-import Sellingapi from '../api/sellingapi'
+import styles from '../../styles/Contantgraph.module.css'
+import Sellingapi from '../../pages/api/sellingapi'
 export const Contantgraph = () => {
     return (
         <>

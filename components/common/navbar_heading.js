@@ -1,4 +1,4 @@
-import styles from '../styles/Navbar_heading.module.css'
+import styles from '../../styles/Navbar_heading.module.css'
 
 export const Navbar_heading = ({ image, name, discription, right_icon }) => {
     return (
@@ -10,7 +10,7 @@ export const Navbar_heading = ({ image, name, discription, right_icon }) => {
                     </div>
                     <span style={{  margin:"0px 15px" }}>
                         <ul className={styles.ul}>
-                            <li><h1 className={styles.h1_name}>{name}</h1> </li>
+                            <li className='md:text-xl sm:text-lg font-semibold'>{name}</li>
                             <li className={styles.desc} style={{ color: "#C0C0C0" }}>{discription}</li>
                         </ul>
                     </span>

@@ -1,5 +1,5 @@
 
-import classes from './Signup.module.css'
+import classes from '../../styles/Signup.module.css'
 
 import React, { useState } from 'react';
 import Loginrighttemp from './loginrighttamp';

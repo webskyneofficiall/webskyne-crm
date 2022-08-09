@@ -1,16 +1,18 @@
-import styles from '../../styles/Checked.module.css'
-import Contantapi from '../api/contantapi'
-export const Checked = (props) => {
+import styles from '../styles/Checked.module.css'
+import Contantapi from './api/contantapi'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { Layout } from '../components/layout'
+export default function Checked (props)  {
     return (
-        <>
-
+<Layout>
             <div className={styles.checked}>
                 {Contantapi.map((e, key) => (
 
                     <ul className={styles.table} key={key}>
                         <li className={styles.td_image}>
                             <button className={styles.icon_button}>
-                                <i className="fa-solid fa-magnifying-glass"></i>
+                            <FontAwesomeIcon icon={faCoffee} />
 
                             </button>
 
@@ -30,7 +32,6 @@ export const Checked = (props) => {
                 ))}
 
             </div>
-
-        </>
+            </Layout>
     )
 }

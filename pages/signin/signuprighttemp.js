@@ -1,4 +1,4 @@
-import classes from './Signup.module.css'
+import classes from '../../styles/Signup.module.css'
 
 const Signuprighttemp = () => {
     return (

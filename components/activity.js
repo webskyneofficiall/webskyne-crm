@@ -1,6 +1,6 @@
 import styles from '../styles/Activity.module.css'
-import { Navbar_heading } from './navbar_heading'
-import Activityapi from './api/activityapi'
+import { Navbar_heading } from './common/navbar_heading'
+import Activityapi from '../pages/api/activityapi'
 export const Activity = () => {
     return (
         <>

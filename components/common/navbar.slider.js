@@ -7,11 +7,11 @@ import {
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
-import styless from '../styles/Navbar.module.css'
+import styless from '../../styles/Navbar.module.css'
 import { Navbar_heading } from "./navbar_heading";
 import "react-pro-sidebar/dist/css/styles.css";
-import styles from "./Navbarslider.module.css"
-import Navbarapi from "./api/navbapi";
+import styles from "../../styles/Navbarslider.module.css"
+import Navbarapi from "../../pages/api/navbapi";
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navbarslider = () => {

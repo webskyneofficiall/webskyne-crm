@@ -1,6 +1,6 @@
-import styles from '../styles/Navbar.module.css'
+import styles from '../../styles/Navbar.module.css'
 import { Navbar_heading } from './navbar_heading'
-import Navbarapi from './api/navbapi';
+import Navbarapi from '../../pages/api/navbapi';
 import Link from 'next/link';
 
 import React, { useState } from "react";
@@ -21,46 +21,6 @@ export const Navbar = () => {
     }
     return (
         <>
-            {/* <div className={styles.navbar}>
-
-                <Navbar_heading
-                    image={<div className={styles.navbar_icon}>
-
-                    </div>}
-                    name="Pony Weist"
-                    discription="Super dashboard"
-                    right_icon={<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                        <div>
-                            <i className="fa-solid fa-angle-up"></i>
-
-                        </div>
-                        <div>
-                            <i className="fa-solid fa-angle-down"></i>
-                        </div>
-
-                    </div>
-                    }
-                />
-                <ul className={styles.ul}>
-                    {Navbarapi.map((e, key) => (
-
-                        <li key={key}>
-                            <p><i className={e.icon} style={{ padding: "0px 10px" }}></i>{e.item}</p>
-                            <div>{e.noti}</div>
-                        </li>
-                    ))
-                    }
-
-
-                </ul>
-
-
-
-            </div> */}
-
-
-
-
             <div className={styles.navbar_mobile}>
 
                 <div className="navbar_body">
