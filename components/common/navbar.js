@@ -3,6 +3,9 @@ import { Navbar_heading } from './navbar_heading'
 import Navbarapi from '../../pages/api/navbapi';
 import Link from 'next/link';
 
+import {GiHamburgerMenu} from 'react-icons/gi';
+import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
+
 import React, { useState } from "react";
 
 export const Navbar = () => {
@@ -32,9 +35,9 @@ export const Navbar = () => {
 
                                     {/* Responsive Menu Button */}
                                     {isResponsiveclose === true ? <>
-                                        <div className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ><div><i className="fa-solid fa-bars"></i> MENU</div></div>
+                                        <div className="menubar__button " style={{ display: 'none' }} onClick={toggleClass} ><div className='flex justify-center items-center gap-3'><span>MENU</span>  <GiHamburgerMenu/>  <IoIosArrowUp/></div></div>
                                     </> : <>
-                                        <div className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ><div><i className="fa-solid fa-bars"></i> MENU</div></div>
+                                        <div className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ><div  className='flex justify-center items-center gap-3'><span>MENU</span>  <GiHamburgerMenu/>   <IoIosArrowDown/></div></div>
                                     </>}
                                     <ul className={boxClass.join(' ')}>
 

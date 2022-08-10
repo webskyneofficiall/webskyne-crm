@@ -1,0 +1,203 @@
+.gray_color {
+    color: gray;
+}
+
+.rightnavbar {
+    width: 100%;
+    position: relative;
+}
+/* navbar  */
+.jobs_navbar {
+    width: 100%;
+    background-color: white;
+    padding: 0.8rem 1rem;
+    border-bottom:2px solid rgb(227, 224, 224) ;
+}
+
+.jobs_botton>div {
+    border: 2px solid green;
+    color: green;
+    width: 210px;
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.jobs_botton>div:last-child {
+    color: green;
+    background-color: green;
+    color: white;
+
+}
+
+.job_options {
+    margin: 3rem 0 0 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.job_options>ul>li {
+    box-sizing: border-box;
+    height: 45px;
+
+}
+
+.job_options>ul>li:hover {
+    border-bottom: 3px solid yellow;
+    /* position: absolute; */
+}
+
+.job_heading {
+    font-size: 1.8rem;
+    margin: 0.3rem 0rem;
+    font-weight: 600;
+}
+
+.totalcandidate>div:first-child {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+/* candidates */
+.candidates_main {
+    overflow-x: scroll;
+    margin: 3rem 0 0 0rem;
+}
+
+.jobs_candidates {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    row-gap: 2rem;
+}
+
+.candidates_heading {
+    border-top: 8px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.5rem;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: 500;
+    /* border: 2px solid black; */
+    border-radius: 0.75rem;
+
+}
+
+.candidates {
+    border-radius: 0.75rem;
+    padding: 0rem 1.2rem;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.candidates_data {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid gray;
+}
+
+.candidates_name {
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+.candidate_review {
+    padding: 1.5rem 0rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* right navbar  */
+.join_rightnavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem ;
+}
+.jobs{
+    /* style={{ display: "grid", gridTemplateColumns: "92% 8%" ,background: "whitesmoke" }} */
+    display:grid;
+    grid-template-columns: 92% 8%;
+    background: whitesmoke;
+}
+.gridflexcol_md{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+@media (max-width: 786px) {
+.jobs{
+    grid-template-columns: 100%;
+
+
+}
+.job_heading {
+
+    font-size: 1rem;
+    margin: 0.3rem 0rem;
+    font-weight: 600;
+}
+.jobs_botton>div {
+margin: 1rem 0rem;
+    width: 170px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.jobs_botton>div:last-child {
+    color: green;
+    background-color: green;
+    color: white;
+
+}
+
+.gridflexcol_md{
+    display: flex;
+    flex-direction: column;
+}
+/* .flexbetween_md{
+    display: flex;
+    justify-content: space-between;
+} */
+.job_options>ul{
+display: flex;
+justify-content: space-between;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+.totalcandidate{
+    justify-content: center;
+    flex-direction: column;
+}
+.jobs_navbar{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.join_rightnavbar{
+
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: aliceblue;
+    padding: 0.6rem 0rem;
+}
+.paddind_sm{
+   
+   padding: 0rem 0.5rem;
+}
+}

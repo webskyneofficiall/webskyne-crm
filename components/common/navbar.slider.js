@@ -12,8 +12,11 @@ import { Navbar_heading } from "./navbar_heading";
 import "react-pro-sidebar/dist/css/styles.css";
 import styles from "../../styles/Navbarslider.module.css"
 import Navbarapi from "../../pages/api/navbapi";
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import {AiOutlineMenuFold ,AiOutlineMenuUnfold} from 'react-icons/ai';
+import {IoIosArrowUp ,IoIosArrowDown} from 'react-icons/io';
+
+
 const Navbarslider = () => {
 
   //create initial menuCollapse state using useState hook
@@ -39,13 +42,13 @@ const Navbarslider = () => {
                   name="Pony Weist"
                   discription="Super dashboard"
                   right_icon={<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                    <div>
-                      <i className="fa-solid fa-angle-up"></i>
+                        <div>
+              <IoIosArrowUp/>
 
-                    </div>
-                    <div>
-                      <i className="fa-solid fa-angle-down"></i>
-                    </div>
+              </div>
+              <div>
+                <IoIosArrowDown/>
+              </div>
 
                   </div>
                   }
@@ -54,9 +57,9 @@ const Navbarslider = () => {
               )}
             </div>
             <div className={styles.closemenu} onClick={menuIconClick}>
-              {menuCollapse ? <div> <FontAwesomeIcon icon={faCoffee} /> </div>
+              {menuCollapse ? <div> <AiOutlineMenuFold /> </div>
                 : 
-                  <div> <FontAwesomeIcon icon={faCoffee} /> </div>}
+                  <div> <AiOutlineMenuUnfold /> </div>}
             </div>
           </SidebarHeader>
           <SidebarContent>
@@ -65,11 +68,11 @@ const Navbarslider = () => {
               {Navbarapi.map((e, key) => (
 
                 <MenuItem  key={key} className={styles.menuitem} icon={<i className={e.icon} ></i>}>
-                  <div className={styles.ul}>
+                  <a className={styles.ul} href={e.link} >
                     <p>{e.item}</p>
                     <div>{e.noti}</div>
 
-                  </div>
+                  </a>
 
                 </MenuItem>
               ))

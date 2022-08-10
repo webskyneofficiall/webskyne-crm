@@ -19,7 +19,7 @@ body {
 
 
 .navbar_body {
-  
+
   color: black;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
@@ -34,19 +34,22 @@ ul.main-menu {
 li {
   list-style-type: none;
 }
+
 @media screen and (max-width: 1250px) {
   .main-nav .menubar__button {
     display: block !important;
     cursor: pointer;
     position: relative;
     z-index: 10037;
-    padding-top: 28px ;
+    padding-top: 28px;
     padding-left: 15px;
   }
-.menubar__button>div{
-  float: right;
-  padding: 0px 25px;
-}
+
+  .menubar__button>div {
+    float: right;
+    padding: 0px 25px;
+  }
+
   .main-nav ul.menuq2 {
     display: block !important;
     z-index: 10007;
@@ -58,4 +61,38 @@ li {
     display: none
   }
 
+}
+
+.roundedicon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 1rem;
+  width: 55px;
+  height: 55px;
+background-color: gray;
+}
+
+.roundedicon-wrapper>div {
+  font-size: 1.7rem;
+}
+
+.roundedicon-wrapper:hover>div {
+  font-size: 2rem;
+  transition: 0.5s;
+
+}
+
+.squareicon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 1rem;
+  width: 55px;
+  height: 55px;
+  color: white
 }
