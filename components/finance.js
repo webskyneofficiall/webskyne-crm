@@ -51,7 +51,8 @@ export const Finance = () => {
                         <li>home</li>
                         <li>home</li>
                     </ul>
-                    <button className={styles.layout_button}>Last month  <i className="fa-solid fa-angle-down"></i></button>
+                        
+                    <button className={styles.layout_button}>Last month <BiSearchAlt2 /> </button>
 
                 </div>
                 <div>

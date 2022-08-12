@@ -10,7 +10,7 @@ export default function Checked (props)  {
                     <ul className={styles.table} key={key}>
                         <li className={styles.td_image}>
                             <button className={styles.icon_button}>
-                            <FontAwesomeIcon icon={faCoffee} />
+                            
 
 
                             </button>

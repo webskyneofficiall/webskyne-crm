@@ -92,3 +92,87 @@ ul.main-menu {
   height: 55px;
   color: white
 }
+
+
+/* model popup  */
+.modal-backdrop-order {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+
+.modal-content-order {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+
+
+/* right sidebar  */
+.sidebar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #777;
+}
+
+.show-wrapper {
+  visibility: visible;
+}
+.hide-wrapper {
+  visibility: hidden;
+}
+
+.sidebar-container {
+  width: 800px;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  right: -700px;
+  z-index: 999;
+  opacity: 0;
+}
+
+.show {
+  transition-delay: 0.3s;
+  transition: 0.4s ease-in-out;
+  transform: translateX(-700px);
+  opacity: 1;
+}
+.hide {
+  transition-delay: 0.3s;
+  transition: 0.4s ease-in-out;
+  transform: translateX(600px);
+  opacity: 0;
+}
+
+.right-toggle-botton{
+  position: absolute;
+  top: 50vh;
+  left: -25px;
+}
+
+@media (max-width: 786px) {
+  .sidebar-wrapper {
+    top: -550px;
+    right: 0;
+  }
+  .sidebar-container {
+    width: 350px;
+  
+  }
+
+}

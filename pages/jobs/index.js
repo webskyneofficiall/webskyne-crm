@@ -1,9 +1,7 @@
 import styles from '../../styles/Jobs.module.css'
 import { Homelayout } from "../../components/homelayout"
 import Jobs_navbar from './jobs_navbar'
-
 import {IoIosArrowBack} from 'react-icons/io';
-
 import {  FaChevronDown, FaChalkboard } from 'react-icons/fa';
 import { Rounded_icon } from '../../components/common/rounded_icon';
 import { Square_icon } from '../../components/common/sqaure_icon';
@@ -12,6 +10,7 @@ import Join_rightnavbar from './jobs_rightnavbar';
 export default function Jobs(props) {
     return (
         <Homelayout>
+        
             < Jobs_navbar />
             <div className={`w-full ${styles.jobs}`} >
                 <div className={`xl:p-5 md:p-4 ${styles.paddind_sm}`}>
