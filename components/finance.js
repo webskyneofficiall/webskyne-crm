@@ -3,6 +3,9 @@ import styles from '../styles/Layout.module.css'
 import { Navbar_heading } from "./common/navbar_heading";
 import { Contantgraph } from "./graph/contantgraph";
 import { useState } from "react";
+
+import { BiSearchAlt2 } from 'react-icons/bi';
+
 export const Finance = () => {
     const [search, setSearch] = useState(true)
     return (
@@ -20,9 +23,9 @@ export const Finance = () => {
                     }
                     name="hi, Johntosan"
                     discription="Cheers, and happy activites - Novamber 18, 2021"
-                    right_icon={<div onClick={() => setSearch((search) ? false : true)} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontSize: "27px", marginRight: "20px"}}>
+                    right_icon={<div onClick={() => setSearch((search) ? false : true)} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontSize: "27px", marginRight: "20px" }}>
 
-                        <i className="fa-solid fa-magnifying-glass"></i>
+                        <BiSearchAlt2 />
 
                     </div>
                     }
@@ -33,7 +36,7 @@ export const Finance = () => {
                     </div>
                     <div onClick={() => setSearch((search) ? false : true)} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontSize: "27px", }}>
 
-                        <i className="fa-solid fa-magnifying-glass"></i>
+                        <BiSearchAlt2 />
 
                     </div>
                 </div>}

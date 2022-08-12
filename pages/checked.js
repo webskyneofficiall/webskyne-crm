@@ -1,7 +1,5 @@
 import styles from '../styles/Checked.module.css'
 import Contantapi from './api/contantapi'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { Layout } from '../components/layout'
 export default function Checked (props)  {
     return (

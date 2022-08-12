@@ -35,18 +35,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
 }
 
 .layout_ul>li {
     /* margin-left: -33px; */
     /* border: 3px solid black; */
     font-size: 24px;
-    padding: 10px 0px;
+    padding:0.5rem 0px;
     list-style: none;
+    border: 2px solid white;
 }
 
 .layout_ul>li:hover {
-    border-bottom: 2px solid blue;
+    border-bottom: 3px solid blue;
 }
 
 .layout_button {

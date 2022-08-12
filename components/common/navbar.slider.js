@@ -7,7 +7,7 @@ import {
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
-import styless from '../../styles/Navbar.module.css'
+
 import { Navbar_heading } from "./navbar_heading";
 import "react-pro-sidebar/dist/css/styles.css";
 import styles from "../../styles/Navbarslider.module.css"
@@ -15,7 +15,8 @@ import Navbarapi from "../../pages/api/navbapi";
 
 import {AiOutlineMenuFold ,AiOutlineMenuUnfold} from 'react-icons/ai';
 import {IoIosArrowUp ,IoIosArrowDown} from 'react-icons/io';
-
+import Link from "next/link";
+import {FaChrome} from 'react-icons/fa';
 
 const Navbarslider = () => {
 
@@ -67,12 +68,16 @@ const Navbarslider = () => {
 
               {Navbarapi.map((e, key) => (
 
-                <MenuItem  key={key} className={styles.menuitem} icon={<i className={e.icon} ></i>}>
-                  <a className={styles.ul} href={e.link} >
-                    <p>{e.item}</p>
-                    <div>{e.noti}</div>
+                <MenuItem  key={key} className={styles.menuitem} icon={<FaChrome/>} >
+                  <Link className="w-full border h-full text-black" href={`${e.link}`} >
 
-                  </a>
+                    <div className={`flex justify-between items-center ${styles.ul}`}>
+                        <p>{e.item}</p>
+                         <div>{e.noti}</div>
+                    </div>
+                  
+
+                  </Link>
 
                 </MenuItem>
               ))

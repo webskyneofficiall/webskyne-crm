@@ -1,5 +1,5 @@
 const Navbarapi = [
-    { link: '/', item: 'Dashboard',noti:2 , icon:"fa-brands fa-adn"},
+    { link: '/home', item: 'Dashboard',noti:2 , icon:"fa-brands fa-adn"},
     { link: '/jobs', item: 'conversation',noti:2,  icon:"fa-brands fa-adn"},
     { link: '/about', item: 'Campagin' ,noti:6 , icon:"fa-brands fa-adn"},
     { link: '/about', item: 'Calander',noti:11,  icon:"fa-brands fa-adn"},

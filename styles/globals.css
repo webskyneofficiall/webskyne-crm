@@ -16,10 +16,14 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+li {
+  list-style-type: none;
+}
+
+
 
 
 .navbar_body {
-
   color: black;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
@@ -31,34 +35,26 @@ ul.main-menu {
   align-items: center;
 }
 
-li {
-  list-style-type: none;
-}
-
 @media screen and (max-width: 1250px) {
   .main-nav .menubar__button {
     display: block !important;
     cursor: pointer;
     position: relative;
     z-index: 10037;
-    padding-top: 28px;
-    padding-left: 15px;
   }
-
   .menubar__button>div {
     float: right;
-    padding: 0px 25px;
-  }
+    padding: 0.5rem 0.2rem;
 
+  }
   .main-nav ul.menuq2 {
     display: block !important;
     z-index: 10007;
     padding-bottom: 17px;
-    padding-top: 35px;
+    padding-top: 3rem;
   }
-
   .main-nav ul.main-menu {
-    display: none
+    display: none;
   }
 
 }
@@ -72,7 +68,7 @@ li {
   padding: 1rem;
   width: 55px;
   height: 55px;
-background-color: gray;
+  background-color: gray;
 }
 
 .roundedicon-wrapper>div {
