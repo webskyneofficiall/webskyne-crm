@@ -33,7 +33,7 @@
 }
 
 .job_options {
-    margin: 3rem 0 0 0;
+    padding: 2rem 0 0 0;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -148,8 +148,6 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        
-
     }
     .righttoggle_navbar >div:first-child{
         margin: 1rem 0px;
@@ -228,5 +226,10 @@
     .paddind_sm {
 
         padding: 0rem 0.5rem;
+    }
+    .job_options {
+        margin: 0.5rem 0 0 0;
+        font-weight: 600;
+        font-size: 1rem;
     }
 }

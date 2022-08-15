@@ -63,7 +63,7 @@ const Sidebar = ({ isVisible, setVisible }) => {
           </div>
           <div className="px-5" style={{ height: "100vh", background: "white" }}>
 
-            <div  className={`${styles.job_options} pt-3`} >
+            <div  className={`${styles.job_options} `} >
               <ul className={`flex xl:gap-6 `} style={{borderBottom:"2px solid #777"}}>
                 <li>CANDIDATES</li>
                 <li>JOB DETAILS</li>
