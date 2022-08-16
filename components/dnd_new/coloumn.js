@@ -24,10 +24,10 @@ export const Column = ({ tasks: { title, tasks }, columnIndex, handleMoveMyTask 
       handleMoveMyTask(from, to);
     },
     canDrop: item => item.columnIndex !== columnIndex,
-    collect: monitor => ({
-      isOver: monitor.isOver(),
-      canDrop: monitor.canDrop()
-    })
+    // collect: monitor => ({
+    //   isOver: monitor.isOver(),
+    //   canDrop: monitor.canDrop()
+    // })
   });
 
   return (

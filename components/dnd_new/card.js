@@ -30,8 +30,8 @@ export const Card = ({ task, empty }) => {
   }
 
 
-  return <div className={`card ` + (empty ? "card--empty" : "")}>
-    <div className={`${styles.candidates}`}>
+  return (
+    <>
 
       <Modalorder
         shown={modalShownorder}
@@ -45,30 +45,33 @@ export const Card = ({ task, empty }) => {
         </div>
 
       </Modalorder>
-      <div className={`flex items-center xl:gap-5 ${styles.candidates_data}`}>
-        <div> <Rounded_icon bgcolor="gray" />  </div>
-        <div className={`${styles.candidates_name}`}
-
-          onClick={() => {
-            toggleModalorder(!modalShown);
-            // toggleModalorderdata();
-          }}
-        >
-          {task}
-
+      <div className={`card ` + (empty ? "card--empty" : "")}>
+        <div className={`${styles.candidates}`}>
+          <div className={`flex items-center xl:gap-5 ${styles.candidates_data}`}>
+            <div> <Rounded_icon bgcolor="gray" />  </div>
+            <div className={`${styles.candidates_name}`}
+              onClick={() => {
+                toggleModalorder(!modalShown);
+                // toggleModalorderdata();
+              }}
+            >
+              {task?.name}
+            </div>
+          </div>
+          <div className={`flex justify-between items-center ${styles.candidate_review}`}>
+            <div className="flex gap-1 items-center justify-center">
+              {task?.rating}
+              <AiTwotoneStar />   <AiTwotoneStar />   <AiTwotoneStar />
+            </div>
+            <div>
+              {task?.date}
+            </div>
+          </div>
         </div>
+
+
       </div>
-      <div className={`flex justify-between items-center ${styles.candidate_review}`}>
-        <div className="flex gap-1">
-          <AiTwotoneStar />   <AiTwotoneStar />   <AiTwotoneStar />
-        </div>
-        <div>
-          2 Days ago
-        </div>
-      </div>
-    </div>
-
-
-  </div>;
+    </>
+  )
 };
 
