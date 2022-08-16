@@ -7,7 +7,8 @@ import { Rounded_icon } from '../../components/common/rounded_icon';
 import { Square_icon } from '../../components/common/sqaure_icon';
 import Candidates from './candidates.js';
 import Join_rightnavbar from './jobs_rightnavbar';
-import Dradndrop from '../../components/dnd';
+import { TaskBoard } from '../../components/dnd_new/taskboard';
+import { Tasks } from '../../components/dnd_new/task';
 export default function Jobs(props) {
     return (
         <Homelayout>
@@ -52,8 +53,8 @@ export default function Jobs(props) {
                         </div>
                     </div>
 
-                    <Dradndrop />
 
+                    <TaskBoard tasks={Tasks} />
 
                 </div>
                 <div style={{ background: "white" }}>

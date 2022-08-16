@@ -15,7 +15,6 @@ export default function Jobs() {
                         onClick={() => setSidebarVisible(!sidebarVisible)}
                     >
                         <Rounded_icon />
-
                          modal
                     </div>
                     <Sidebar isVisible={sidebarVisible} setVisible={setSidebarVisible} />

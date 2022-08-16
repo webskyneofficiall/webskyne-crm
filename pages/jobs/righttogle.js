@@ -10,28 +10,22 @@ import styles from '../../styles/Jobs.module.css'
 const Sidebar = ({ isVisible, setVisible }) => {
   return (
     <div
+      onClick={() => setVisible(false)}
       className={
         isVisible
           ? "sidebar-wrapper show-wrapper"
           : "sidebar-wrapper hide-wrapper"
       }
+
     >
-      <div
-        className={
-          isVisible ? "sidebar-container show" : "sidebar-container hide"
-        }
-        style={{ background: "whitesmoke" }}
-      >
+      <div className={isVisible ? "sidebar-container show" : "sidebar-container hide"} >
         <div className=""  style={{ background: "whitesmoke" }}>
-
-
           <div className={styles.righttoggle_navbar}>
             <div className="flex justify-center items-center gap-3">
               <div className="flex flex-col justify-center items-center gap-2">
                 <div className="">
                   <img style={{ borderRadius: "50%", width: "70px", height: "70px", overflow: "hidden" }} src="https://cdn.pixabay.com/photo/2022/08/03/15/29/bird-7362864_960_720.jpg" />
                   <div className="flex gap-2 px-6 py-1 items-center justify-center" style={{ background: "white", borderRadius: "1rem", marginTop: "-15px", zIndex: "1", position: "absolute", marginLeft: "-12px" }}> <AiFillStar />4.0</div>
-
                 </div>
               </div>
               <div className="">
@@ -63,8 +57,8 @@ const Sidebar = ({ isVisible, setVisible }) => {
           </div>
           <div className="px-5" style={{ height: "100vh", background: "white" }}>
 
-            <div  className={`${styles.job_options} `} >
-              <ul className={`flex xl:gap-6 `} style={{borderBottom:"2px solid #777"}}>
+            <div className={`${styles.job_options} `} >
+              <ul className={`flex xl:gap-6 `} style={{ borderBottom: "2px solid #777" }}>
                 <li>CANDIDATES</li>
                 <li>JOB DETAILS</li>
                 <li>TIMELINE & NOTES</li>
@@ -73,29 +67,10 @@ const Sidebar = ({ isVisible, setVisible }) => {
               </ul>
             </div>
           </div>
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <button onClick={() => setVisible(false)} className="right-toggle-botton">
           <Rounded_icon icon={<IoIosArrowForward />} />
         </button>
-
-
-
       </div>
     </div>
   );
