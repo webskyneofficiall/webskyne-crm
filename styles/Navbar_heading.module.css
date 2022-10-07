@@ -1,0 +1,32 @@
+.navbar_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul>li {
+    list-style: none;
+    line-height: 20px;
+}
+
+.right_container {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.image {
+    height: 2.3rem;
+    border-radius: 10px;
+    width: 2.3rem;
+}
+
+.h1_name {
+    font-size: 20px;
+}
+
+.desc {
+    margin: 4px 0px;
+    color: chocolate;
+}
+
